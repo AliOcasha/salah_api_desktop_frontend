@@ -25,8 +25,8 @@ def draw_clock():
 def draw_dropdown():
     global dropdown
     options = ["Option 1", "Option 2", "Option 3"]
-    dropdown = ctk.CTkComboBox(root,values=options,height=72,width=300)
-    dropdown.pack_configure(side="bottom")
+    dropdown = ctk.CTkComboBox(root,values=options,height=90,width=300,font=("Arial",40),dropdown_font=("Arial",40))
+    dropdown.pack_configure(side="bottom",fill="x")
 
 def create_prayer_element(prayer_name,prayer_time):
     frame = ctk.CTkFrame(root)
